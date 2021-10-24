@@ -1,0 +1,339 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #24252A; */
+    background-color: white;
+}
+
+li, a, button, p {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #0088a9;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #0088a9;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+section {
+    /* border: 1px solid red; */
+    padding: 10px 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    width: 15%;
+    border-radius: 10px;
+}
+
+.form_logo {
+    cursor: pointer;
+    width: 100px;
+    border-radius: 10px;
+    margin: auto;
+    padding: auto;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px;
+}
+
+.nav_links a {
+    /* display: inline-block; */
+    padding: 20px 20px; 
+}
+
+.nav_links li a, footer a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover, .nav_links li:hover, footer a:hover {
+    background-color: #0088a9;
+    color: white;
+    
+}
+
+.loginButton a {
+    border: 1px solid;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.loginButton a:hover {
+    background-color: #0088a9;
+    color: white;
+}
+
+input {
+    border: none;
+    appearance: none;
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+    box-shadow: 0px 0px 1px #155e63;
+    margin: 10px 0px;
+    outline: none;
+}
+
+button {
+    border: none;
+    appearance: none;
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 5px;
+    height: 40px;
+    width: 350px;
+    box-shadow: 0px 0px 1px #155e63;
+    margin: 10px 0px;
+    outline: none;
+}
+
+._button {
+    color: white;
+    font-size: 16px;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0.1s;
+    width: 50%;
+}
+
+
+.input_form {
+    /* border: 1px solid black; */
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;    
+    box-shadow: 0px 0px 5px rgb(126, 126, 126);
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    /* position: absolute; */
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px 60px;
+    background-color: #155e63;
+}
+
+footer em, footer p {
+    padding: 0px 0px;
+    width: 50%;
+    color: white;
+    background-color: #155e63;
+    border: 1px white;
+}
+
+.two_cols_index {
+    display: flex;
+    padding: 10px 10%;
+    height: 600px;
+    /* border: 1px solid green; */
+}
+
+.page_section {
+    padding: 10px 10%;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.page_section_user_homepage {
+    padding: 10px 10%;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    /* border: 1px solid; */
+}
+
+.section_container {
+    width: 100%;
+    border: 1px solid #979797;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.section_header {
+    margin-top: 100px;
+    display: inline;
+    font-size: 30px;
+    width: 150%;
+    background-color: #0088a9;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+}
+
+.section_content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    /* border: 1px solid; */
+}
+
+.sub_section_content {
+    margin: auto;
+    width: 40%;
+}
+
+.section_image {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+.account_links {
+    margin: auto
+}
+
+.account_links li {
+    list-style: none;
+    padding: 1px;
+    text-align: center;
+    /* border: 1px green solid; */
+}
+
+.account_links a {
+    display: block;
+    padding: 30px 60px;
+    background-color: #0088a9;
+    color: white;
+    transition: all ease 0.2s 0s;
+    border: 1px solid white;
+}
+
+.account_links a:hover {
+    background-color: white;
+    color: #0088a9;
+    border: 1px solid #0088a9;
+}
+
+select {
+    border: none;
+    appearance: none;
+    background-color: #f2f2f2;
+    padding: 8px;
+    border-radius: 5px;
+    height: 40px;
+    width: 50%;
+    box-shadow: 0px 0px 1px #155e63;
+    margin: 10px 0px;
+    outline: none;
+}
+
+label {
+    color: teal;
+}
+
+.double_input:first-child {
+    width: 100%;
+}
+
+.double_input:last-child {
+    margin-left: 5px;
+    width: 60%;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.span_two_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+.transaction_input {
+    width: 50%;
+}
+
+.two_col_parent_div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left_div {
+    width: 100%;
+}
+
+.right_div {
+    width: 0%;
+    margin: auto;
+    padding: 5px;
+    transition: all 0.3 ease;
+    visibility: hidden;
+}
+
+#hr_vertical {
+    visibility: hidden;
+}
+
+.two_col_div {
+    /* border: 1px red solid; */
+}
+
+.button_add_record_transaction {
+    width: 50%;
+}
+
+.button_cancel_add_acc {
+    background-color: white;
+    color: #0088a9;
+    border: 2px #0088a9;
+    border-width: 1px;
+    transition: 0s;
+}
+
+.button_cancel_add_acc:hover {
+    box-shadow: 0px 0px 1px 1px 
+}
+.add_acc_input {
+    width: 70%;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title> 
+    <link rel="shortcut icon" href="./images/logo only.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- header of the page -->
+        <!-- <h1 class="heading">Simplified Expense Accounts</h1> -->
+        <img class="logo" id="logo" src="images/logo.png" alt="my money logo">
+        
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Balance Sheet</a></li>
+            </ul>
+        </nav>  
+    
+        <a class="username" href="#">Hi, Tarun 👋🏼</a>
+    </header>
+
+    <section class="page_section">
+        <div class="section_container ">
+            <h2>Record a transaction</h2>
+            <br><hr><br>
+            <div class="two_col_parent_div">
+                <div class="left_div two_col_div" id="left_div">
+                    <label for="particular">Particular</label>
+                    <br>
+                    <input class="transaction_input" type="text" placeholder="Particular name" id="particular" name="particular">
+                    <br>
+                    <label for="particular_description">Particular Description</label>
+                    <br>
+                    <input class="transaction_input" type="text" placeholder="Particular Description" id="particular_description" name="particular_description">
+                    <br>
+                    <label for="debit_acc_type">Debit Account</label>
+                    <br>
+                    <span class="span_two_input transaction_input">
+                        <select class="double_input" name="debit_acc" id="debit_acc">
+                            <option value="choose_option">--choose--</option>
+                            <option value="some_acc">Account Name (e.g. Computer account)</option>
+                        </select>
+                        <button id="btn_add_new_acc_debit" class="_button double_input">Add new account?</button>
+                    </span>
+                    <br>
+                    <label for="transaction_amount">Amount (in INR)</label>
+                    <br>
+                    <input class="transaction_input" type="number" id="transaction_amount" name="transaction_amount" placeholder="Amount (in INR)">
+                    <br>
+                    <label for="credit_acc_type">Credit Account</label>
+                    <br>
+                    <span class="span_two_input transaction_input">
+                        <select class="double_input" name="credit_acc" id="credit_acc">
+                            <option value="choose_option">--choose--</option>
+                            <option value="some_acc">Account Name (e.g. Cash account)</option>
+                        </select>
+                        <button id="btn_add_new_acc_credit" class="_button double_input">Add new account?</button>
+                    </span>
+                    <br><br>
+                    <button class="_button button_add_record_transaction">Add to balance sheet</button>
+                </div>
+
+                <hr id="hr_vertical">
+                
+                <div class="right_div two_col_div" id="right_div">
+                    <h3>Add Account</h3>
+                    <br><br><hr><br><br>
+                    <label for="acc_name">Account Name</label>
+                    <br>
+                    <input class="add_acc_input" type="text" id="acc_name" name="acc_name" placeholder="Account name">
+                    <br>
+                    <label for="acc_description">Account Description</label>
+                    <br>
+                    <input class="add_acc_input" type="text" id="acc_description" name="acc_description" placeholder="Account name">
+                    <br>
+                    <label for="acc_value">Account Value</label>
+                    <br>
+                    <input class="add_acc_input" type="number" name="acc_value" id="acc_value" placeholder="Account value">
+                    <br>
+                    <label for="acc_type">Account type</label> 
+                    <br>
+                    <select class="add_acc_input" name="acc_type" id="acc_type">
+                        <option value="choose">-- choose --</option>
+                        <option value="asset">Asset account</option>
+                        <option value="liability">Liability account</option>
+                        <option value="income">Income account</option>
+                        <option value="expense">Expense account</option>
+                    </select>
+                    <br>
+                    <button class="_button button_add_record_transaction">Add Account</button>
+                    <button id="button_cancel_add_acc" class="_button button_cancel_add_acc">Cancel</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="./script_user_homepage.js"></script>
+</body>
+</html>

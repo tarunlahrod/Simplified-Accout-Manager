@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="shortcut icon" href="./images/logo only.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+        <nav>
+            <!-- navigation bar -->
+            <ul class="nav_links">
+                <li><a href="./index.html">Homepage</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="input_section">
+        <div class="input_form">
+            <img class="form_logo" src="./images/logo.png" alt="My Money">
+            <br>
+            <form action="#" method="POST">
+                <input type="text" class="textinput" autocomplete="off" name="fname" id="fname" placeholder="First name" required>
+                <br>
+                <input type="text" class="textinput" autocomplete="off" name="lname" id="lname" placeholder="Last name" required>
+                <br>
+                <input type="email" class="textinput" autocomplete="off" name="signupemail" id="signupemail" placeholder="Email" required>
+                <br>
+                <input type="password" class="textinput" name="signuppassword" id="signuppassword" placeholder="Password" required>
+                <br>
+                <input type="password" class="textinput" name="signuppasswordconfirm" id="signuppasswordconfirm" placeholder="Re-enter password" required>
+                <hr>
+                <button id="btn_login" type="button" class="_button" onclick="signup()">Sign Up</button>
+                <br>
+                <div>
+                    <p style="font-size: 14px; color: #6d6d6d;">Already a user? <a href="./login.html" style="font-size: 14px;">Log In</a></p>
+                </div>
+            </form>
+            
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

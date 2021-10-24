@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <link rel="shortcut icon" href="./images/logo only.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="login_header">
+        <h1>Login</h1>
+        <nav>
+            <!-- navigation bar -->
+            <ul class="nav_links">
+                <li><a href="./index.html">Homepage</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="input_form">
+            <img class="form_logo" src="./images/logo.png" alt="My Money">
+            <br>
+
+            <form action="./user_homepage.html">
+                <input type="text" autocomplete="off" name="email" id="email" placeholder="Enter Email" required>
+                <br>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required>
+                <br>
+                <hr>
+                <button id="btn_login" type="button" class="_button" onclick="login()">Log In</button>
+
+                <br><br>
+                <div style="display: flex; justify-content: space-between;">
+                    <a style="font-size: 14px;" id="forget_pw" href="#">Forget Password?</a>
+                    <p style="font-size: 14px; color: #6d6d6d;">New user? <a href="./signup.html" style="font-size: 14px;">Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
